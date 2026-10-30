@@ -1,0 +1,164 @@
+{
+    "version": 1,
+    "author": "Hitendra Singh Chaudhary",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "wokwi-arduino-uno",
+            "id": "uno",
+            "top": 0,
+            "left": 0,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-l293d",
+            "id": "driver",
+            "top": 40,
+            "left": 280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-dc-motor",
+            "id": "motor1",
+            "top": -100,
+            "left": 500,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-dc-motor",
+            "id": "motor2",
+            "top": 20,
+            "left": 500,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-dc-motor",
+            "id": "motor3",
+            "top": 140,
+            "left": 500,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-dc-motor",
+            "id": "motor4",
+            "top": 260,
+            "left": 500,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-pushbutton",
+            "id": "button",
+            "top": 300,
+            "left": 0,
+            "attrs": {
+                "color": "green",
+                "label": "ON/OFF"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "uno:5",
+            "driver:1,2EN",
+            "green",
+            []
+        ],
+        [
+            "uno:8",
+            "driver:1A",
+            "blue",
+            []
+        ],
+        [
+            "uno:9",
+            "driver:2A",
+            "blue",
+            []
+        ],
+        [
+            "uno:6",
+            "driver:3,4EN",
+            "green",
+            []
+        ],
+        [
+            "uno:10",
+            "driver:3A",
+            "blue",
+            []
+        ],
+        [
+            "uno:11",
+            "driver:4A",
+            "blue",
+            []
+        ],
+        [
+            "driver:1Y",
+            "motor1:1",
+            "orange",
+            []
+        ],
+        [
+            "driver:2Y",
+            "motor1:2",
+            "orange",
+            []
+        ],
+        [
+            "driver:1Y",
+            "motor2:1",
+            "orange",
+            []
+        ],
+        [
+            "driver:2Y",
+            "motor2:2",
+            "orange",
+            []
+        ],
+        [
+            "driver:3Y",
+            "motor3:1",
+            "orange",
+            []
+        ],
+        [
+            "driver:4Y",
+            "motor3:2",
+            "orange",
+            []
+        ],
+        [
+            "driver:3Y",
+            "motor4:1",
+            "orange",
+            []
+        ],
+        [
+            "driver:4Y",
+            "motor4:2",
+            "orange",
+            []
+        ],
+        [
+            "uno:GND.1",
+            "driver:GND",
+            "black",
+            []
+        ],
+        [
+            "uno:5V",
+            "driver:VCC1",
+            "red",
+            []
+        ],
+        [
+            "uno:5V",
+            "driver:VCC2",
+            "red",
+            []
+        ]
+    ],
+    "dependencies": {}
+}

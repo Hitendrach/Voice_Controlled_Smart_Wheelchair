@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Voice-Controlled Smart Wheelchair Using Arduino Uno and Bluetooth
 
 ## 1. Project Overview
@@ -240,3 +241,6 @@ The project provides practical experience in embedded programming, hardware inte
 **Programming Language:** Embedded C/C++
 
 **Communication:** Bluetooth (HC-05)
+=======
+# Voice_Controlled_Smart_Wheelchair
+>>>>>>> 5df01868654f9ed80b60e3586f8599909f36bab7
